@@ -11,7 +11,7 @@
             var watchID = null;
              
             function loaded() {
-                watchID = navigator.geolocation.watchPosition(success, error, { frequency: 3000 });
+		navigator.geolocation.getCurrentPosition(success, error);
             }
              
              
